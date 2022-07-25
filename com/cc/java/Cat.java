@@ -1,29 +1,11 @@
 package com.cc.java;
 
-public class Cat {
+public class Cat extends SuperCat{
     
-    private String name;
-    private String furColor;
-    private int age;
-
     private int counter;
    
     public Cat(String name, String furColor, int age) {
-        this.name = name;
-        this.furColor = furColor;
-        this.age = age;
-    }
-
-    /** Getter */
-    public String getStringAttributes(String flag) {
-        switch (flag) {
-            case "#name":
-                return name; 
-            case "#furColor":
-                return furColor; 
-            default:
-                return "ERROR: ???";
-        }
+        super(name, furColor, age);
     }
 
     public String getAge() {
